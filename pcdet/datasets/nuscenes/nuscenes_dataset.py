@@ -40,7 +40,7 @@ class NuScenesDataset(DatasetTemplate):
                 continue
             with open(info_path, 'rb') as f:
                 infos = pickle.load(f)
-                nuscenes_infos.extend(infos)
+                nuscenes_infos.extend(infos)    # generate data_info
 
         self.infos.extend(nuscenes_infos)
         self.logger.info('Total samples for NuScenes dataset: %d' % (len(nuscenes_infos)))
