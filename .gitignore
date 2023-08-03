@@ -17,3 +17,5 @@ output
 version.py
 work_dirs
 work_dirs/*
+.vscode
+.vscode/*
