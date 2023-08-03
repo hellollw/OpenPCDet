@@ -90,7 +90,7 @@ def main():
 
     output_dir = cfg.ROOT_DIR / 'output' / cfg.EXP_GROUP_PATH / cfg.TAG / args.extra_tag
     if args.work_dirs is not None:
-        output_dir = args.work_dirs
+        output_dir = Path(args.work_dirs)
 
     ckpt_dir = output_dir / 'ckpt'
     output_dir.mkdir(parents=True, exist_ok=True)
